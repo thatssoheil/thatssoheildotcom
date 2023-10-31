@@ -1,17 +1,9 @@
-/** @jsxImportSource @emotion/react */
-'use client'
-import tw, { styled } from "twin.macro"
+import Home from "@/components/home/Home";
 
-export default function Home() {
+export default function Page() {
   return (
     <main>
-      <div tw='flex justify-center items-center h-screen'>
-        <Title>Coming Soon</Title>
-      </div>
+      <Home />
     </main>
   )
 }
-
-const Title = styled.h1`
-  ${tw`text-4xl font-bold text-center`}
-`

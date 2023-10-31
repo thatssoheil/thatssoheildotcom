@@ -4,4 +4,7 @@ const withTwin = require('./withTwin')
 
 module.exports = withTwin({
     reactStrictMode: true,
+    experimental: {
+        serverActions: true,
+    }
 })
