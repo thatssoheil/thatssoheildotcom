@@ -8,10 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        m: '320px',
+        t: '768px',
+        d: '1024px',
+      },
       colors: {
         accent: '#007BFF',
         black: '#000000',
-        white: '#FFFFFF',
+        white: '#E0E0E0',
       },
     },
   },

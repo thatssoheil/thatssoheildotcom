@@ -1,17 +1,9 @@
 import './globals.css'
 
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
 
-import Header from '@/components/Header'
+import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer'
-
-
-const ubuntu = Roboto({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: '500',
-})
 
 export const metadata: Metadata = {
   title: 'Soheil Fakour',
@@ -25,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={ubuntu.className}>
+      <body>
         <Header />
         {children}
         <Footer />
