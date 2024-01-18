@@ -19,7 +19,7 @@ export default function NotFound() {
                     <Fa4 />
                 </div>
                 <Paragraph className='text-center'>
-                    The page you're looking for is part of the system.<br />
+                    The page {`you're`} looking for is part of the system.<br />
                     A system that enslaves you.<br />
                     A system that you must escape.
                 </Paragraph>
