@@ -12,7 +12,7 @@ export default function NotFound() {
                     className='
                         flex
                         absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 
-                        *:text-[20rem] *:text-white *:opacity-15
+                        m:*:text-8xl d:*:text-9xl *:text-white *:opacity-25
                     '>
                     <Fa4 />
                     <Fa0 />

@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 const BarcodeTransition = () => {
@@ -18,26 +19,28 @@ const BarcodeTransition = () => {
     }, []);
 
     return (
-        <div className='flex justify-center items-center'>
-            <h1
-                style={{
-                    fontFamily: 'LibreBarcode39',
-                    opacity: scrollPosition > 200 ? 0 : 1,
-                    transition: 'opacity 1s'
-                }}
-                className={'text-white text-5xl text-center absolute top-7'}>
-                THATSSOHEIL
-            </h1>
-            <h1
-                style={{
-                    fontFamily: 'LibreBarcode39Text',
-                    opacity: scrollPosition > 200 ? 1 : 0,
-                    transition: 'opacity 1s'
-                }}
-                className={'text-white text-5xl text-center absolute top-7'}>
-                THATSSOHEIL
-            </h1>
-        </div>
+        <Link href={'/'}>
+            <div className='flex justify-center items-center'>
+                <h1
+                    style={{
+                        fontFamily: 'LibreBarcode39',
+                        opacity: scrollPosition > 200 ? 0 : 1,
+                        transition: 'opacity 1s'
+                    }}
+                    className={'text-white text-5xl text-center absolute top-7'}>
+                    THATSSOHEIL
+                </h1>
+                <h1
+                    style={{
+                        fontFamily: 'LibreBarcode39Text',
+                        opacity: scrollPosition > 200 ? 1 : 0,
+                        transition: 'opacity 1s'
+                    }}
+                    className={'text-white text-5xl text-center absolute top-7'}>
+                    THATSSOHEIL
+                </h1>
+            </div>
+        </Link>
     )
 }
 

@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer'
+import MatrixBackground from '@/components/core/MatrixBackground'
 
 export const metadata: Metadata = {
   title: 'Soheil Fakour',
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang='en'>
       <body>
         <Header />
+        <MatrixBackground />
         {children}
         <Footer />
       </body>

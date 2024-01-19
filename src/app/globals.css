@@ -21,9 +21,8 @@ body {
   background: var(--background);
   font-family: 'DM Sans';
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
+  overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
@@ -32,7 +31,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--foreground);
+  background-color: var(--accent);
   border-radius: 4px;
   background-image:
     -webkit-linear-gradient(45deg,

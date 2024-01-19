@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Paragraph } from '../core/Typography';
 import BarcodeTransition from './BarcodeTransition';
 import Logo from './Logo';

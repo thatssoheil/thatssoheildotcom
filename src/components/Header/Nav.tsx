@@ -5,7 +5,7 @@ import Button from '../core/Button'
 
 const Nav = () => {
     return (
-        <div className='gap-6 flex justify-end items-center'>
+        <div className='h-9 gap-6 flex justify-end items-center'>
             {/* <Link href={'/vault'}>
                 <Paragraph clickable>Vault</Paragraph>
             </Link>
@@ -13,7 +13,7 @@ const Nav = () => {
                 <Paragraph clickable>About</Paragraph>
             </Link> */}
             <div className='w-32 m:hidden t:block d:block'>
-                <Button >
+                <Button>
                     <Link href={'https://www.linkedin.com/in/soheilfakour/'}>
                         Connect
                     </Link>

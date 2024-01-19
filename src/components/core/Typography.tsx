@@ -1,10 +1,11 @@
 interface TypographyProps {
     children: React.ReactNode
-    className?: string
     clickable?: boolean
+    className?: string
+    style?: React.CSSProperties
 }
 
-export const Heading = ({ children, className, clickable }: TypographyProps) => {
+export const Heading = ({ children, clickable, className, style }: TypographyProps) => {
     return (
         <h1
             className={`
@@ -15,13 +16,15 @@ export const Heading = ({ children, className, clickable }: TypographyProps) => 
                 duration-300 
                 ${className} 
                 ${clickable ? 'hover:text-accent' : ''}
-            `}>
+            `}
+            style={style}
+        >
             {children}
         </h1>
     )
 }
 
-export const Paragraph = ({ children, className, clickable }: TypographyProps) => {
+export const Paragraph = ({ children, clickable, className, style }: TypographyProps) => {
     return (
         <p
             className={`
@@ -32,7 +35,9 @@ export const Paragraph = ({ children, className, clickable }: TypographyProps) =
                 duration-300 
                 ${className} 
                 ${clickable ? 'hover:text-accent' : ''}
-            `}>
+            `}
+            style={style}
+        >
             {children}
         </p>
     )
