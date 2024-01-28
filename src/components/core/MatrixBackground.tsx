@@ -45,7 +45,7 @@ const MatrixBackground = () => {
             }
         }
 
-        const intervalId = setInterval(draw, 33);
+        const intervalId = setInterval(draw, 55);
 
         return () => clearInterval(intervalId);
     }, []);

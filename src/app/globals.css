@@ -19,7 +19,7 @@
 body {
   color: rgb(var(--foreground));
   background: var(--background);
-  font-family: 'DM Sans';
+    font-family: 'DM Sans', serif;
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-y: scroll;
@@ -46,7 +46,7 @@ body::-webkit-scrollbar-thumb {
 
 @font-face {
   font-family: 'DM Sans';
-  src: url('../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf');
+  src: url('../assets/fonts/DMSans-VF.ttf');
 }
 
 @font-face {
