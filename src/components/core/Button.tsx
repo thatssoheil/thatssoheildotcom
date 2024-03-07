@@ -10,7 +10,7 @@ const Button = ({ className, children, onClick }: ButtonProps) => {
             className={`
                 ${className} 
                 w-full h-9
-                border border-white rounded 
+                border border-white rounded-full
                 flex justify-center items-center
                 bg-transparent text-white font-medium
                 hover:bg-white hover:text-black
