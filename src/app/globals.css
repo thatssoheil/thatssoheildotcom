@@ -3,58 +3,56 @@
 @tailwind utilities;
 
 :root {
-  --foreground: #1E1E1E;
-  --background-start: #1E1E1E;
-  --background-end: #1E1E1E;
+    --foreground: #E0E0E0;
+    --background: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --accent: #007BFF;
-    --foreground: #E0E0E0;
-    --background: #000000;
-  }
+    :root {
+        --accent: #007BFF;
+        --foreground: #E0E0E0;
+        --background: #000000;
+    }
 }
 
 body {
-  color: rgb(var(--foreground));
-  background: var(--background);
+    color: rgb(var(--foreground));
+    background: var(--background);
     font-family: 'DM Sans', serif;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: scroll;
+    -ms-overflow-style: none;
+    /*scrollbar-width: none;*/
+    overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
-  width: 10px;
-  background-color: var(--background);
+    width: 10px;
+    background-color: var(--background);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--accent);
-  border-radius: 4px;
-  background-image:
-    -webkit-linear-gradient(45deg,
-      rgba(255, 255, 255, .2) 25%,
-      transparent 25%,
-      transparent 50%,
-      rgba(255, 255, 255, .2) 50%,
-      rgba(255, 255, 255, .2) 75%,
-      transparent 75%,
-      transparent)
+    background-color: var(--accent);
+    border-radius: 4px;
+    background-image: -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
+    transparent 75%,
+    transparent)
 }
 
 @font-face {
-  font-family: 'DM Sans';
-  src: url('../assets/fonts/DMSans-VF.ttf');
+    font-family: 'DM Sans';
+    src: url('../assets/fonts/DMSans-VF.ttf');
 }
 
 @font-face {
-  font-family: 'LibreBarcode39';
-  src: url('../assets/fonts/LibreBarcode39-Regular.ttf');
+    font-family: 'LibreBarcode39';
+    src: url('../assets/fonts/LibreBarcode39-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'LibreBarcode39Text';
-  src: url('../assets/fonts/LibreBarcode39Text-Regular.ttf');
+    font-family: 'LibreBarcode39Text';
+    src: url('../assets/fonts/LibreBarcode39Text-Regular.ttf');
 }

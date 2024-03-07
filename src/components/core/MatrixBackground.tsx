@@ -15,6 +15,7 @@ const MatrixBackground = () => {
 
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
+        // canvas.height = 1000;
 
         const binary = 'codingvisionintoexistence';
         const columns = canvas.width / 10;

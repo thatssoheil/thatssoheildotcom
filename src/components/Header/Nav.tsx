@@ -12,13 +12,14 @@ const Nav = () => {
             <Link href={'/about'}>
                 <Paragraph clickable>About</Paragraph>
             </Link> */}
-            <div className='w-32 m:hidden t:block d:block'>
+
+            {/*<div className='w-32 m:hidden t:block d:block'>
                 <Button>
                     <Link href={'https://www.linkedin.com/in/soheilfakour/'}>
                         Connect
                     </Link>
                 </Button>
-            </div>
+            </div>*/}
         </div>
     )
 }
