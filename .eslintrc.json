@@ -1,6 +1,10 @@
 {
   "extends": [
-    "next",
-    "next/core-web-vitals"
+    "next/core-web-vitals",
+    "next/typescript",
+    "plugin:eslint-lugin-next-on-pages/recommended"
+  ],
+  "plugins": [
+    "eslint-plugin-next-on-pages"
   ]
 }
