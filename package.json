@@ -11,6 +11,9 @@
     "preview": "npm run pages:build && wrangler pages dev",
     "deploy": "npm run pages:build && wrangler pages deploy"
   },
+  "engines": {
+    "node": ">=20.18.0"
+  },
   "dependencies": {
     "next": "15.0.1",
     "react": "19.0.0-rc-69d4b800-20241021",
