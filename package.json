@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "preview": "npm run build && npx @opennextjs/cloudflare && wrangler dev",
-    "deploy": "npm run build && npx @opennextjs/cloudflare && wrangler deploy"
+    "preview": "pnpm build && pnpm dlx @opennextjs/cloudflare && wrangler dev",
+    "deploy": "pnpm build && pnpm dlx @opennextjs/cloudflare && wrangler deploy"
   },
   "engines": {
     "node": ">=20.18.0"
