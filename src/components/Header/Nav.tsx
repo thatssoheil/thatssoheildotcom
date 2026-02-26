@@ -1,8 +1,3 @@
-import Link from 'next/link'
-import { Paragraph } from '../core/Typography'
-import Button from '../core/Button'
-
-
 const Nav = () => {
     return (
         <div className='h-9 gap-6 flex justify-end items-center'>
